@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+
+<body>
+
+
+<input type="text" id="input">
+<button id="search" onclick="buttonSearch()">search</button>
+<br>
+<button id="item0" value="item0" onclick="buttonClicked()">item0</button>
+
+<script>
+  const buttonSearch = function() {
+    console.log('do search!');
+  };
+  const buttonClicked = function() {
+    document.getElementById('input').value = document.getElementById('item0').value;
+    document.getElementById('search').click()
+  };
+</script>
+</body>
+
+</html>
